@@ -12,8 +12,11 @@ Source1:	apache.conf
 URL:		http://0pointer.de/lennart/projects/mod_mime_xattr/
 BuildRequires:	%{apxs}
 BuildRequires:	apache-devel >= 2.2
+BuildRequires:	attr-devel
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake >= 1:1.9
+BuildRequires:	lynx
+BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.268
 Requires:	apache(modules-api) = %apache_modules_api
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
